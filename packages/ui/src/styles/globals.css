@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 212 100% 62%;
+  --primary-hover: #2884EF;
+  --secondary: 152 57% 56%;
+  --brand-primary-hex: #3E97FF;
+  --brand-secondary-hex: #50CD89;
+  --bg-canvas: #f4f6fa;
+  --bg-card: #ffffff;
+  --bg-header: #ffffff;
+  --border-color: #e4e6ef;
+  --text-main: #181C32;
+  --text-muted: #5E6278;
+  --radius: 14px;
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.dark {
+  --primary: 212 100% 62%;
+  --primary-hover: #2884EF;
+  --secondary: 152 57% 56%;
+  --brand-primary-hex: #3E97FF;
+  --brand-secondary-hex: #50CD89;
+  --bg-canvas: #151521;
+  --bg-card: #1e1e2d;
+  --bg-header: #1e1e2d;
+  --border-color: #2b2b40;
+  --text-main: #ffffff;
+  --text-muted: #92929f;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-main);
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+/* Metronic Design System Utility Classes */
+.metronic-canvas {
+  background-color: var(--bg-canvas);
+}
+
+.metronic-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.metronic-header {
+  background-color: var(--bg-header);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.metronic-border {
+  border-color: var(--border-color);
+}
+
+.metronic-text-main {
+  color: var(--text-main);
+}
+
+.metronic-text-muted {
+  color: var(--text-muted);
+}
+
+.metronic-btn-primary {
+  background-color: var(--brand-primary-hex);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: all 0.15s ease-in-out;
+}
+.metronic-btn-primary:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 4px 14px rgba(62, 151, 255, 0.35);
+}
+
+.font-urdu {
+  font-family: 'Noto Sans Arabic', 'Noto Nastaliq Urdu', system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(146, 146, 159, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(146, 146, 159, 0.45);
+}

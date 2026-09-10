@@ -1,0 +1,18 @@
+[package]
+name = "inventory-system-desktop"
+version = "0.1.0"
+description = "Inventory System Windows Desktop Tauri Application"
+edition = "2021"
+
+[lib]
+name = "inventory_system_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[dependencies]
+tauri = { version = "2.0.0", features = [] }
+tauri-plugin-sql = { version = "2.0.0", features = ["sqlite"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[build-dependencies]
+tauri-build = { version = "2.0.0", features = [] }

@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: inventory_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: inventory_cloud
+      POSTGRES_USER: inventory_admin
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-SecurePostgresPass2026!}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  api:
+    build:
+      context: ../..
+      dockerfile: apps/server/Dockerfile
+    container_name: inventory_api
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      PORT: 3000
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USER: inventory_admin
+      DATABASE_PASSWORD: ${DB_PASSWORD:-SecurePostgresPass2026!}
+      DATABASE_NAME: inventory_cloud
+    ports:
+      - "3000:3000"
+volumes:
+  postgres_data:
