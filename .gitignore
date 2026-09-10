@@ -36,3 +36,5 @@ Thumbs.db
 
 # System generated artifacts
 .system_generated
+.firebase
+
