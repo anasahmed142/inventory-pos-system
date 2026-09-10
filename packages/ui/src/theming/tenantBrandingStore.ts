@@ -40,11 +40,11 @@ interface TenantBrandingStoreState {
 
 const DEFAULT_PROFILE: TenantBrandingProfile = {
   tenantId: 'tenant-root-001',
-  name: 'Inventory System Enterprise',
-  urduName: 'انوینٹری سسٹم انٹرپرائز',
+  name: 'KhataGHR',
+  urduName: 'کھاتہ گھر',
   logoBase64: null,
-  primaryHex: '#3E97FF', // Metronic Modern Royal Blue
-  secondaryHex: '#50CD89', // Metronic Emerald Green
+  primaryHex: '#2563eb', // Modern Royal Indigo Blue
+  secondaryHex: '#10b981', // Emerald Green
   themeMode: 'dark',
   themePreset: 'metronic_dark',
   fontFamily: "'Inter', system-ui, -apple-system, sans-serif",

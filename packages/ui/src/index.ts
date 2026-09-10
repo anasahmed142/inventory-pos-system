@@ -12,4 +12,5 @@ export * from './components/excel/excelHub';
 export * from './components/excel/ExcelImportExportModal';
 export * from './components/expenses/DailyExpenseRoznamchaModal';
 export * from './components/manual/SoftwareUserManualModal';
+export * from './components/branding/KhataGhrLogo';
 export * from './stores/masterDataStore';

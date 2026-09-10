@@ -1,20 +1,31 @@
-# 🏪 Enterprise Inventory, POS, Wholesale Trade & Khata Management System
+# 🏪 KhataGHR (کھاتہ گھر) • Enterprise POS, Wholesale Trade & Khata Management
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Firebase%20Hosting-blue?style=for-the-badge&logo=firebase)](https://inventory-pos-anas-142.web.app)
-[![GitHub License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)](https://github.com/anasahmed142/inventory-pos-system/actions)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+<p align="center">
+  <img src="apps/web/public/khataghr-logo.svg" alt="KhataGHR Logo" width="140" height="140" />
+</p>
 
-> **A high-performance, multi-tenant, offline-first Enterprise Retail POS, Wholesale Distribution, Agricultural Mandi Kanta, and Bahi-Khata Ledger Management Suite.** Built for Pakistan & global trading markets with FBR digital tax compliance, Urdu typography, 3-tier document printing, and 1-click WhatsApp alerts.
+<p align="center">
+  <b>Smart Offline-First Business Management • Retail POS • Wholesale Distribution • Mandi Kanta • Bahi-Khata Ledger</b>
+</p>
+
+<p align="center">
+  <a href="https://khataghr-pos.web.app"><img src="https://img.shields.io/badge/Live%20Demo-KhataGHR%20Live-blue?style=for-the-badge&logo=firebase" alt="Live Demo" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" /></a>
+  <a href="https://github.com/anasahmed142/inventory-pos-system/actions"><img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge" alt="Build Status" /></a>
+  <img src="https://img.shields.io/badge/TypeScript-5.4-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react" alt="React" />
+</p>
+
+> **KhataGHR (کھاتہ گھر)** is a high-performance, multi-tenant, offline-first Enterprise Retail POS, Wholesale Distribution, Agricultural Mandi Kanta, and Bahi-Khata Ledger Management Suite. Built for Pakistani & global commerce with FBR digital tax compliance, Urdu typography, 3-tier document printing, and 1-click WhatsApp alerts.
 
 ---
 
 ## 🌐 Live Web Application
 
-- **Production Live URL**: [**https://inventory-pos-anas-142.web.app**](https://inventory-pos-anas-142.web.app)
-- **Alternative Mirror**: [https://inventory-pos-anas-142.firebaseapp.com](https://inventory-pos-anas-142.firebaseapp.com)
+- **Production Live URL**: [**https://khataghr-pos.web.app**](https://khataghr-pos.web.app)
+- **Alternative Mirror**: [https://khataghr-pos.firebaseapp.com](https://khataghr-pos.firebaseapp.com)
 - **GitHub Repository**: [https://github.com/anasahmed142/inventory-pos-system](https://github.com/anasahmed142/inventory-pos-system)
+
 
 ---
 

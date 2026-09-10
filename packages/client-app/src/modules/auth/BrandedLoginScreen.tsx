@@ -18,7 +18,7 @@ import {
   Moon
 } from 'lucide-react';
 import { UserRole, UserPermission, CompanyCategory } from '@inventory/shared-types';
-import { useTenantBrandingStore, BusinessMode, useMasterDataStore, CompanyRecord } from '@inventory/ui';
+import { useTenantBrandingStore, BusinessMode, useMasterDataStore, CompanyRecord, KhataGhrLogo } from '@inventory/ui';
 
 export interface UserSession {
   id: string;
@@ -262,21 +262,18 @@ export const BrandedLoginScreen: React.FC<BrandedLoginScreenProps> = ({ onLoginS
               className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-2 md:mb-3 rounded-2xl object-contain border border-slate-200 dark:border-[#2b2b40] p-1 shadow-sm bg-white dark:bg-[#151521]"
             />
           ) : (
-            <div
-              className="w-12 h-12 md:w-14 md:h-14 mx-auto mb-2 md:mb-3 rounded-2xl flex items-center justify-center text-white font-black text-xl md:text-2xl shadow-sm"
-              style={{ backgroundColor: primaryColor }}
-            >
-              IS
+            <div className="flex justify-center mb-2 md:mb-3">
+              <KhataGhrLogo size={64} showText={false} />
             </div>
           )}
-          <h1 className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 dark:text-white">
-            {profile?.name || 'Inventory System Enterprise'}
+          <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 dark:text-white">
+            {profile?.name || 'KhataGHR'}
           </h1>
-          <h2 className="text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400 font-urdu mt-0.5">
-            {profile?.urduName || 'مرکزی انوینٹری، پوائنٹ آف سیل و کھاتہ لاگ ان'}
+          <h2 className="text-sm sm:text-base font-bold text-blue-600 dark:text-blue-400 font-urdu mt-0.5">
+            {profile?.urduName || 'کھاتہ گھر • سمارٹ بزنس مینجمنٹ'}
           </h2>
           <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 mt-1">
-            Enterprise SaaS Platform for Pakistani Retail & Commercial Trade
+            Enterprise Offline-First POS, Wholesale Trade & Bahi-Khata System
           </p>
         </div>
 

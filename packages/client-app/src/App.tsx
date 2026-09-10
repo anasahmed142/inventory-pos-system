@@ -6,7 +6,8 @@ import {
   ThemeCustomizerModal,
   ExcelImportExportModal,
   DailyExpenseRoznamchaModal,
-  SoftwareUserManualModal
+  SoftwareUserManualModal,
+  KhataGhrLogo
 } from '@inventory/ui';
 import { BrandedLoginScreen, UserSession } from './modules/auth/BrandedLoginScreen';
 import { MainAdminDashboard } from './modules/admin/MainAdminDashboard';
@@ -113,17 +114,14 @@ export const App: React.FC = () => {
               className="w-8 h-8 md:w-10 md:h-10 rounded-xl object-contain bg-white dark:bg-[#1e1e2d] p-1 border border-slate-200 dark:border-[#2b2b40] shadow-sm shrink-0"
             />
           ) : (
-            <div
-              className="w-8 h-8 md:w-10 md:h-10 rounded-xl flex items-center justify-center font-black text-white text-base md:text-lg tracking-wider shadow-sm transition-all shrink-0"
-              style={{ backgroundColor: primaryColor }}
-            >
-              {isMainAdmin ? '👑' : isWholesale ? '🏢' : isMandi ? '🌾' : 'IS'}
+            <div className="shrink-0">
+              <KhataGhrLogo size={36} showText={false} />
             </div>
           )}
           <div className="min-w-0">
             <div className="flex items-center space-x-1.5 md:space-x-2">
               <span className="font-extrabold text-xs md:text-base tracking-tight text-[var(--text-main)] truncate">
-                {isMainAdmin ? 'SaaS Admin' : profile?.name || currentUser.tenantName}
+                {isMainAdmin ? 'KhataGHR SaaS' : profile?.name || currentUser.tenantName}
               </span>
               <span
                 className="hidden sm:inline-block text-[9px] md:text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider border shrink-0"

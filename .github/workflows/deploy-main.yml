@@ -34,6 +34,7 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_INVENTORY_POS_ANAS_142 }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_KHATAGHR_POS }}'
           channelId: live
-          projectId: inventory-pos-anas-142
+          projectId: khataghr-pos
+
